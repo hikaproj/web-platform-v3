@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101311">
+  <meta name="description" content="Webサイト、ツール、コンテンツに共通して使うHikaproj Web Platform v3のデザインシステム。">
+  <title>Hikaproj Web Platform v3 | Design System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="https://hikaproj.com/new/" aria-label="Hikaproj ホーム">
+      <img src="https://hikaproj.com/new/512.hikaproj.logo.png" alt="" width="36" height="36">
+      <span>Hikaproj</span>
+    </a>
+    <nav class="site-nav" aria-label="メインナビゲーション">
+      <a href="https://hikaproj.com/new/links/" class="nav-link-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><path d="m8.7 10.7 6.6-4.4M8.7 13.3l6.6 4.4"></path></svg><span>相互リンク</span></a>
+      <a href="https://hikaproj.com/new/news/">新着情報</a>
+      <a href="https://hikaproj.com/new/contact/">お問い合わせ</a>
+    </nav>
+    <button class="site-menu" type="button" aria-label="メニュー" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+  </header>
+
+  <main id="top" class="page platform-page">
+    <header class="page-head platform-hero">
+      <div>
+        <p class="page-code">HIKAPROJ / DESIGN SYSTEM / 03</p>
+        <h1>Web Platform <span>v3</span></h1>
+        <p>Webサイト、ツール、コンテンツを横断して使う、Hikaprojの共通デザインシステム。</p>
+      </div>
+      <span class="page-head-mark platform-mark" aria-hidden="true">03</span>
+    </header>
+
+    <section class="platform-intro" aria-labelledby="principles-title">
+      <div class="intro-copy">
+        <p class="section-code">ONE SYSTEM / MANY EXPERIENCES</p>
+        <h2 id="principles-title">用途を限定しない、<br>一貫したWeb体験。</h2>
+        <p>情報サイト、アプリ、ツール、記事など、異なるコンテンツに共通の視覚言語と操作ルールを提供します。個々のページの目的に合わせて構成を選びながら、Hikaprojらしい体験を保ちます。</p>
+        <a class="button-primary intro-link" href="components.html">デザインパーツを見る <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="tool-template/index.html">AI向けツール雛形を見る <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="system-panel" aria-label="デザインシステムの属性">
+        <div class="system-panel-head"><span class="system-signal"></span><span>SYSTEM STATUS</span><span>V3.0</span></div>
+        <div class="system-readout"><span>01</span><div><strong>共通の視覚言語</strong><small>COLOR / TYPE / MOTION</small></div><span class="readout-mark">+</span></div>
+        <div class="system-readout"><span>02</span><div><strong>用途に応じた構成</strong><small>WEB / APP / CONTENT</small></div><span class="readout-mark">+</span></div>
+        <div class="system-readout"><span>03</span><div><strong>アクセシブルな操作</strong><small>RESPONSIVE / INCLUSIVE</small></div><span class="readout-mark">+</span></div>
+        <div class="system-panel-foot"><span>DESIGNED TO ADAPT</span><span>JP / 2026</span></div>
+      </div>
+    </section>
+
+    <section class="foundation-section" aria-labelledby="foundation-title">
+      <header class="section-heading">
+        <div><p class="section-code">FOUNDATION / 01</p><h2 id="foundation-title">デザインの基礎</h2></div>
+        <span class="section-index">COLOR / TYPE / GRID</span>
+      </header>
+      <div class="foundation-grid">
+        <article class="foundation-card palette-card">
+          <p class="component-code">COLOR / TOKENS</p>
+          <h3>暗い空間に、明確なアクセント。</h3>
+          <p>落ち着いた背景と可読性の高い文字を基調に、操作や情報の種類を色で識別します。</p>
+          <div class="swatch-row" aria-label="カラーパレット">
+            <span class="swatch swatch-bg" title="Background"></span>
+            <span class="swatch swatch-ink" title="Text"></span>
+            <span class="swatch swatch-lime" title="Primary accent"></span>
+            <span class="swatch swatch-cyan" title="Secondary accent"></span>
+            <span class="swatch swatch-coral" title="Alert accent"></span>
+          </div>
+          <div class="token-labels"><span>BG</span><span>INK</span><span>LIME</span><span>CYAN</span><span>ALERT</span></div>
+        </article>
+        <article class="foundation-card type-card">
+          <p class="component-code">TYPE / HIERARCHY</p>
+          <h3>情報の優先度を、文字で伝える。</h3>
+          <div class="type-sample"><span>DISPLAY / 800</span><strong>見出しの階層</strong></div>
+          <div class="type-sample type-sample-body"><span>BODY / 400</span><p>本文は長く読めるサイズと行間で、情報を明瞭に伝えます。</p></div>
+          <div class="type-sample type-sample-mono"><span>MONO / 400</span><code>STATUS / 03</code></div>
+        </article>
+        <article class="foundation-card layout-card">
+          <p class="component-code">LAYOUT / RESPONSIVE</p>
+          <h3>画面に合わせて、構成を変える。</h3>
+          <p>余白とグリッドを柔軟に変化させ、モバイルから大画面まで一貫した使いやすさを保ちます。</p>
+          <div class="layout-preview" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="token-labels"><span>FLUID SPACE</span><span>ADAPTIVE GRID</span><span>320px+</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="usage-section" aria-labelledby="usage-title">
+      <header class="section-heading">
+        <div><p class="section-code">APPLICATION / 02</p><h2 id="usage-title">ひとつのシステム、多様な用途。</h2></div>
+        <a class="text-link" href="components.html">共通パーツを見る <span aria-hidden="true">↗</span></a>
+      </header>
+      <div class="usage-grid">
+        <article class="usage-card"><span class="usage-number">01</span><span class="usage-icon" aria-hidden="true">↗</span><h3>Webサイト</h3><p>トップページ、記事、プロフィールなどの情報設計。</p><span class="usage-meta">PAGES / STORIES / NEWS</span></article>
+        <article class="usage-card"><span class="usage-number">02</span><span class="usage-icon" aria-hidden="true">□</span><h3>アプリケーション</h3><p>操作・入力・結果表示を含むインタラクティブな画面。</p><span class="usage-meta">INTERFACE / WORKFLOW</span></article>
+        <article class="usage-card"><span class="usage-number">03</span><span class="usage-icon" aria-hidden="true">＋</span><h3>コンテンツ・その他</h3><p>一覧、データ表示、告知などの用途に合わせた表現。</p><span class="usage-meta">DATA / MEDIA / MORE</span></article>
+      </div>
+    </section>
+
+    <aside class="notice platform-note">
+      <span class="notice-icon" aria-hidden="true">i</span>
+      <p>このページはHikaproj Web Platform v3の概要見本です。カラー、タイポグラフィ、各UIパーツの仕様はデザインマニュアルを参照してください。</p>
+      <a href="DESIGN-MANUAL.md">マニュアル <span aria-hidden="true">↗</span></a>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <span>HIKAPROJ WEB PLATFORM / V3</span>
+    <a href="components.html">DESIGN SYSTEM <span aria-hidden="true">↗</span></a>
+    <span>© 2026 HIKAPROJ</span>
+  </footer>
+</body>
+</html>
